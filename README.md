@@ -62,19 +62,20 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 2.3 Frontend
 
-*[Incluya aquí una explicación de la solución utilizada para el frontend de la tarea. No olvide incluir las ligas o referencias donde se puede encontrar información de los lenguajes de programación, frameworks y librerías utilizadas.]*
+El Frontend fue desarrollado con el framework [Flask](https://flask.palletsprojects.com/en/1.1.x/), se decidio usar esta opción ya que de manera muy sencilla se puede conectar a MySQL, generar las consultas y pasarlo al front  
+
 
 #### 2.3.1 Lenguaje de programación
-#### 2.3.2 Framework
-El front-end fue desarrollado con el framework Flask 
+Flask se programa en [Python](https://www.python.org/) para la parte del back, las rutas y la configuración de la aplicación  y se usa HTML, CSS para las vistas web
 
+#### 2.3.2 Instalación
 Para correr la aplicación se debe clonar este repo y, acceder a la carpeta, crear un ambiente virtual y installar los requirimentos de flask con los sigueintes comandos:
 
 ```
 cd frontend
 python3 -m venv venv 
 source venv/bin/activate
-pip install requirements.txt 
+pip install -r requirements.txt 
 ```
 
 Posteriormente se debe correr la aplicación con el comando 
@@ -82,10 +83,7 @@ Posteriormente se debe correr la aplicación con el comando
 python app.py
 ```
 #### 2.3.3 Librerías de funciones o dependencias
-- FlaskAPI
-- FlaskSQL
-
-
-
+- [FlaskAPI](https://www.flaskapi.org/)
+- [FlaskSQL](https://flask-mysql.readthedocs.io/en/latest/)
 
 
