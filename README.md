@@ -69,7 +69,7 @@ El Frontend fue desarrollado con el framework [Flask](https://flask.palletsproje
 Flask se programa en [Python](https://www.python.org/) para la parte del back, las rutas y la configuración de la aplicación  y se usa HTML, CSS para las vistas web
 
 #### 2.3.2 Instalación
-Para correr la aplicación se debe clonar este repo y, acceder a la carpeta, crear un ambiente virtual y installar los requirimentos de flask con los sigueintes comandos:
+Para correr la aplicación se debe clonar este repo y, acceder a la carpeta, crear un ambiente virtual y instalar los requerimentos de flask con los siguientes comandos:
 
 ```
 cd frontend
