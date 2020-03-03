@@ -5,7 +5,7 @@
 ##### Integrantes:
 1. *Daniel Charua Garcia* - *A01017419* - *CSF*
 2. *Sergio Hernandez Castillo* - *A01025210* - *CSF*
-3. *[Poner aquí Nombre y Apellidos del integrante 3]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
+3. *Roberto Alejandro Gutiérrez Guillén]* - *A01019608* - *CSF*
 4. *[Poner aquí Nombre y Apellidos del integrante 4]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
 
 ---
