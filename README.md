@@ -58,7 +58,7 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 
 ### 2.2 Arquitectura de la solución
 
-*[Incluya aquí un diagrama donde se aprecie la arquitectura de la solución propuesta, así como la interacción entre los diferentes componentes de la misma.]*
+![Arquitectura de la solución](assets/DiagramWork.png)
 
 ### 2.3 Frontend
 

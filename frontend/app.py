@@ -1,21 +1,20 @@
 from flask import Flask, jsonify, request, url_for
 from flask_api import FlaskAPI, status, exceptions
 from flaskext.mysql import MySQL
+from flask_db2 import DB2
 
 app = FlaskAPI(__name__)
-mysql = MySQL()
 
-# MySQL configurations
-app.config['MYSQL_DATABASE_USER'] = 'root'
-app.config['MYSQL_DATABASE_PASSWORD'] = ''
-app.config['MYSQL_DATABASE_DB'] = 'myflixdb'
-app.config['MYSQL_DATABASE_HOST'] = 'localhost'
+"""
+app.config['DB2_DATABASE'] = 'sample'
+app.config['DB2_HOSTNAME'] = 'localhost'
+app.config['DB2_PORT'] = 50000
+app.config['DB2_PROTOCOL'] = 'TCPIP'
+app.config['DB2_USER'] = 'db2inst1'
+app.config['DB2_PASSWORD'] = 'db2inst1'
 
-mysql.init_app(app)
+db = DB2(app) #You forgot that
 
-## conextion variables
-conn = mysql.connect()
-cur = conn.cursor()
 
 """
 notes = {
@@ -66,6 +65,8 @@ def notes_detail(key):
 @app.route("/", methods=['GET', 'POST'])
 def index():
     # request.method == 'GET'
+    conn = db.connection
+    cur = db.connection.cursor()
     return {'flask-api': ''}
 
 ### colegio end points
@@ -164,6 +165,9 @@ def get_partido(key):
         conn.commit()
         return {'partido' : 'borrado'}
     #Put method for update
+
+"""
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8080, debug=True)
 
