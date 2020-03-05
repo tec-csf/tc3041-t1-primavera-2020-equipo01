@@ -55,10 +55,10 @@ A continuación aparecen descritos los diferentes elementos que forman parte de 
 ### 2.1 Modelo de la *base de datos* 
 
 *[Incluya aquí el Diagrama Entidad-Relación Extendido y explique las jerarquías modeladas así como las restricciones existentes*
+![Arquitectura de la solución](assets/DiagramWork.png)
 
 ### 2.2 Arquitectura de la solución
-
-![Arquitectura de la solución](assets/DiagramWork.png)
+![Arquitectura de la solución](assets/diagrama.png)
 
 ### 2.3 Frontend
 
