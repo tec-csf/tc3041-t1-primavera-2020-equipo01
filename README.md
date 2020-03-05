@@ -6,7 +6,7 @@
 1. *Daniel Charua Garcia* - *A01017419* - *CSF*
 2. *Sergio Hernandez Castillo* - *A01025210* - *CSF*
 3. *Roberto Alejandro Gutiérrez Guillén]* - *A01019608* - *CSF*
-4. *[Poner aquí Nombre y Apellidos del integrante 4]* - *[Poner aquí su Matrícula]* - *[Poner aquí su campus]*
+4. *Eduardo Badillo Álvarez* - *A01020716* - *CSF*
 
 ---
 ## 1. Aspectos generales
@@ -53,7 +53,7 @@ Como parte de la entrega de la tarea, se debe incluir la siguiente información:
 A continuación aparecen descritos los diferentes elementos que forman parte de la solución de la tarea.
 
 ### 2.1 Modelo de la *base de datos* 
-
+Utilizamos TPH (Table Per Hierarchy) para modelar la base de datos. Todas las tablas están normalizadas a la 3NF, salvo la tabla de votante y las tablas especializadas que derivan de ella. La tabla de votante tiene datos temporales a nivel de aplicación, siendo el pasaporte y el rango de fechas la llave primaria por registro. Dicha tabla integra todos los campos de sus tablas hijas y tiene valores determinantes que indican si el votante es mexicano o extranjero, y si es miembro o suplente en unas elecciones. Hay valores nulos en cada tupla segun el tipo de votante que sea. 
 *[Incluya aquí el Diagrama Entidad-Relación Extendido y explique las jerarquías modeladas así como las restricciones existentes*
 ![Arquitectura de la solución](assets/DiagramWork.png)
 
