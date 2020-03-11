@@ -5,18 +5,20 @@ from flask_db2 import DB2
 
 app = FlaskAPI(__name__)
 
-"""
-app.config['DB2_DATABASE'] = 'sample'
+app.config['DB2_DATABASE'] = 'elecciones'
 app.config['DB2_HOSTNAME'] = 'localhost'
 app.config['DB2_PORT'] = 50000
 app.config['DB2_PROTOCOL'] = 'TCPIP'
 app.config['DB2_USER'] = 'db2inst1'
-app.config['DB2_PASSWORD'] = 'db2inst1'
+app.config['DB2_PASSWORD'] = 'password'
 
 db = DB2(app) #You forgot that
 
+conn = db.connection
+cur = db.connection.cursor()
 
 """
+
 notes = {
     0: 'do the shopping',
     1: 'build the codez',
@@ -65,8 +67,6 @@ def notes_detail(key):
 @app.route("/", methods=['GET', 'POST'])
 def index():
     # request.method == 'GET'
-    conn = db.connection
-    cur = db.connection.cursor()
     return {'flask-api': ''}
 
 ### colegio end points
@@ -166,7 +166,6 @@ def get_partido(key):
         return {'partido' : 'borrado'}
     #Put method for update
 
-"""
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=8080, debug=True)
